@@ -1,0 +1,38 @@
+body{
+    height: 100vh;
+}
+
+img{
+    max-height: 50px;
+}
+
+.mobile-logo{
+    display: none;
+}
+
+.h-list li:last-child{
+    color: orange;
+}
+
+.bell-orange{
+    color: orange;
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .mobile-logo{
+        display: block;
+    }
+
+    .full-logo{
+        display: none;
+    }
+
+    .bell-orange{
+        display: flex;
+    }
+
+    .h-list{
+        display: none!important;
+    }
+}
