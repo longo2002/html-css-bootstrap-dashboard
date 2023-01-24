@@ -19,6 +19,19 @@ img{
     display: none;
 }
 
+.main-interface{
+    display: flex;
+    height: calc(100vh - 70px);
+}
+
+.sidebar{
+    background-color: rgba(17,39,62,255);
+    color: white;
+    height: 100%;
+}
+
+
+
 @media only screen and (max-width: 768px) {
     .mobile-logo{
         display: block;
