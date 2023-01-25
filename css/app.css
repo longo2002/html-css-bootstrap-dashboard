@@ -1,5 +1,6 @@
 .h-main{
     height: 75px;
+    overflow: hidden;
 }
 
 img{
@@ -22,6 +23,25 @@ img{
 
 .interface{
     height: calc(100vh - 75px);
+    display: flex;
+}
+
+.i-header{
+    height: 100px;
+    background-color: rgba(27,114,232,255);
+}
+
+.i-body{
+    height: calc(100% - 100px);
+}
+
+.sidebar{
+    width: 150px;
+    background-color: rgba(10,33,56,255);
+}
+
+.main-interface{
+    width: calc(100% - 150px);
 }
 
 @media only screen and (max-width: 768px) {
@@ -40,4 +60,14 @@ img{
     .pop-bell{
         display: flex;
     }
+
+    .sidebar{
+        width: 75px;
+    }
+    
+    .main-interface{
+        width: calc(100% - 75px);
+    }
+
+
 }
