@@ -10,9 +10,9 @@
     <title>Boolean</title>
 </head>
 <body>
-    <header class="h-main">
-        <div class="container-sm p-3">
-            <div class="row justify-content-between align-items-center justify-content-center">
+    <header class="h-main d-flex align-items-center">
+        <div class="container">
+            <div class="row justify-content-between align-items-center gx-5">
                 <div class="col-2">
                     <img class="logo" src="./img/img/logo.svg" alt="logo">
                     <img class="logo-sm" src="./img/img/mobile-logo.png" alt="logo-sm">
@@ -20,11 +20,11 @@
                 <div class="col-8">
                     <div class="container-fluid">
                       <form class="d-flex" role="search">
-                        <input class="form-control me-2 w-100" type="search" placeholder="Search" aria-label="Search">
+                        <input class="form-control me-2 w-100" type="search" placeholder="Prova a cercare: lezioni Laravel" aria-label="Search">
                       </form>
                     </div>
                 </div>
-                <div class="col-2 ">
+                <div class="col-2">
                     
                     <ul class="h-list list-unstyled m-0 d-flex gap-xl-5 gap-md-3">
                         <li>
@@ -48,7 +48,62 @@
     </header>
     <main class="interface"> 
         <aside class="sidebar">
-            
+            <div class="container">
+                <div class="row">
+                    <div class="col side-col">
+                        <ul class="i-list list-unstyled d-flex flex-column gap-3 row-gap-2 p-3 ">
+                            <li>
+                                <span class="i-list-menu-cover">
+                                <i class="fa-sharp fa-solid fa-house"></i>
+                                </span>
+                                <span class="i-list-menu-text">
+                                    Home
+                                </span>
+                            </li>
+                            <li>
+                                <span class="i-list-menu-cover">
+                                <i class="fa-solid fa-chart-simple"></i>
+                                </span>
+                                <span class="i-list-menu-text" >
+                                    Stats
+                                </span>
+                            </li>
+                            <li>
+                                <span class="i-list-menu-cover">
+                                <i class="fa-solid fa-signal"></i>
+                                </span>
+                                <span class="i-list-menu-text">
+                                    Signals
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="i-list list-unstyled d-flex gap-2 p-3 ">
+                            <span class="i-list-menu-cover">
+                            <i class="fa-solid fa-gear"></i>
+                            </span>
+                            <span class="i-list-menu-text">
+                                Admin
+                            </span>
+                        </div>
+                        <ul class="i-list-icon list-unstyled flex-column gap-3 row-gap-2 p-3">
+                            <li class="i-list-menu-cover">
+                                <i class="fa-sharp fa-solid fa-house"></i>
+                            </li>
+                            <li class="i-list-menu-cover">
+                                <i class="fa-solid fa-chart-simple"></i>
+                            </li class="i-list-menu-cover">
+                            <li>
+                                <i class="fa-solid fa-signal"></i>
+                            </li>
+                        </ul>
+                        <div class="i-list-icon list-unstyled gap-2 p-3 ">
+                            <span class="i-list-menu-cover">
+                            <i class="fa-solid fa-gear"></i>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </aside>
         <main class="main-interface">
             <header class="i-header">
