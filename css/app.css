@@ -1,0 +1,42 @@
+.h-main{
+    height: 75px;
+}
+
+img{
+    height: 100%;
+}
+
+.logo-sm{
+    display: none;
+    height: 75px;
+}
+
+.h-list li:last-child{
+    color: orange;
+}
+
+.pop-bell{
+    display: none;
+}
+
+.interface{
+    height: calc(100vh - 75px);
+}
+
+@media only screen and (max-width: 768px) {
+    .logo{
+        display: none;
+    }
+    
+    .logo-sm{
+        display: block;
+    }
+    
+   .h-list{
+        display: none;
+    }
+
+    .pop-bell{
+        display: block;
+    }
+}
