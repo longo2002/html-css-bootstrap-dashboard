@@ -8,7 +8,7 @@ img{
 
 .logo-sm{
     display: none;
-    height: 75px;
+    height: 50px;
 }
 
 .h-list li:last-child{
@@ -17,6 +17,7 @@ img{
 
 .pop-bell{
     display: none;
+    color: orange;
 }
 
 .interface{
@@ -33,10 +34,10 @@ img{
     }
     
    .h-list{
-        display: none;
+        display: none!important;
     }
 
     .pop-bell{
-        display: block;
+        display: flex;
     }
 }
