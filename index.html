@@ -5,13 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
-    <script src="https://kit.fontawesome.com/ada0ed41be.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ada0ed41be.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./css/app.css">
     <title>Boolean</title>
 </head>
 <body>
-    <header class="h-main d-flex align-items-center">
+    <header class="h-main d-flex align-items-center overflow-visible">
         <div class="container-fluid">
             <div class="row justify-content-between align-items-center ">
                 <div class="col-auto">
@@ -44,16 +45,18 @@
                             </a>
                         </li>
                         <li>
-                            <div class="flex-shrink-0 dropdown">
-                                <a href="#">
-                                    <i class="fa-solid fa-bell"></i>
-                                </a>
-                                <ul class="dropdown-menu text-small shadow" aria-labelledby="dropdownUser2" style="">
-                                  <li><a class="dropdown-item" href="#">Profilo</a></li>
-                                  <li><a class="dropdown-item" href="#">Fatturazione</a></li>
-                                  <li><a class="dropdown-item" href="#">Log Out</a></li>
-                                </ul>
-                              </div>
+                            <div class="dropdown">
+                                <div class="flex-shrink-0 dropdown overflow-visible">
+                                    <a href="#" class="d-block link-dark text-decoration-none dropdown-toggle show" id="dropdownUser2" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fa-solid fa-bell orange"></i>
+                                    </a>
+                                    <ul class="dropdown-menu text-small shadow show " aria-labelledby="dropdownUser2" style="position: absolute; inset: 0px auto auto 0px; margin: 0px; transform: translate(-125px, 34px);" data-popper-placement="bottom-end">
+                                      <li><a class="dropdown-item" href="#">Profilo</a></li>
+                                      <li><a class="dropdown-item" href="#">Fatturazione</a></li>
+                                      <li><a class="dropdown-item" href="#">Log Out</a></li>
+                                    </ul>
+                                </div>
+                            </div>
                         </li>
                     </ul>
 
@@ -109,7 +112,101 @@
         </aside>
         <main class="main-interface">
             <header class="i-header">
+                <div class="container-fluid">
+                    <div class="row d-flex flex-wrap">
+                        <div class="col-6 py-4">
+                            <p class="fs-2 text-light mb-0">
+                                Boolean
+                                <span class="badge rounded-pill bg-info bg-opacity-10 fs-6">Piano blaze</span>
+                            </p>
+                            <div class="d-flex flex-wrap align-items-center py-2 gap-2">
+                                <span class="badge rounded-pill bg-info bg-opacity-10 fs-6">3 app</span>
+                                <i class="fa-solid fa-angles-right text-light"></i>
+                                <span class="badge rounded-pill bg-info bg-opacity-10 fs-6 pillola-off ">Boolean mobile app</span>
+                                <span class="badge rounded-pill bg-info bg-opacity-10 fs-6 pillola-off ">Boolean web app</span>
+                                <span class="badge rounded-pill bg-info bg-opacity-10 fs-6 pillola-off ">Boolean blog app</span>
+                                <span class="badge rounded-pill bg-info bg-opacity-10 fs-6 pillola-mobile ">+</span>
+                            </div>
+                        </div>
+                        <div class="col-3 text-light py-4">
+                            <p class="fs-6" >Studenti online negli ultimi 30 minuti</p>
+                            <p class="fs-2" >125</p>
+                        </div>
+                        <div class="col-3 text-light py-4">
+                            <span>
+                                Nuovo studente
+                            </span>
+                            <button class="border border-white rounded bg-transparent text-light " type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
 
+                            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+                            <div class="offcanvas-header">
+                                <h5 class="offcanvas-title" id="offcanvasRightLabel">Inserisci nuovo studente</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                            </div>
+                            <div class="offcanvas-body">
+                                <form class="row g-3 needs-validation" novalidate>
+                                    <div class="col-md-6">
+                                      <label for="validationCustom01" class="form-label">Nome</label>
+                                      <input type="text" class="form-control" id="validationCustom01" value="Nome" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                      <label for="validationCustom02" class="form-label">Cognome</label>
+                                      <input type="text" class="form-control" id="validationCustom02" value="Cognome" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="validationCustomUsername" class="form-label">Email</label>
+                                        <div class="input-group has-validation">
+                                          <span class="input-group-text" id="inputGroupPrepend">@</span>
+                                          <input type="text" class="form-control" id="validationCustomUsername" aria-describedby="inputGroupPrepend" required>
+                                        </div>
+                                      </div>
+                                    <div class="col-md-6">
+                                      <label for="validationCustom03" class="form-label">Password</label>
+                                      <input type="text" class="form-control" id="validationCustom03" required>
+                                    </div>
+                                    <div class="col-md-6">
+                                        <label for="validationCustom03" class="form-label">Citt&aacute;</label>
+                                        <input type="text" class="form-control" id="validationCustom03" required>
+                                      </div>
+                                    <div class="col-md-3">
+                                      <label for="validationCustom04" class="form-label">Stato</label>
+                                      <select class="form-select" id="validationCustom04" required>
+                                        <option selected disabled value="">Scegli..</option>
+                                        <option>...</option>
+                                      </select>
+                                    </div>
+                                    <div class="col-md-3">
+                                      <label for="validationCustom05" class="form-label">Cap</label>
+                                      <input type="text" class="form-control" id="validationCustom05" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="formFile" class="form-label">Foto</label>
+                                        <input class="form-control" type="file" id="formFile">
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="form-check">
+                                          <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                                          <label class="form-check-label" for="invalidCheck">
+                                            Seleziona per confermare.
+                                          </label>
+                                        </div>
+                                      </div>
+                                    <div class="col-auto">
+                                        <button class="btn btn-primary" type="submit">Salva</button>
+                                      </div>
+                                    <div class="col-auto">
+                                      <button class="btn btn-warning" type="submit">Svuota</button>
+                                    </div>
+                                  </form>
+                                
+                            </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
             </header>
             <section class="i-body">
 

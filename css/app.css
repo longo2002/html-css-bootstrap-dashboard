@@ -17,7 +17,7 @@ a{
     height: 50px;
 }
 
-.h-list li:last-child{
+.orange{
     color: orange;
 }
 
@@ -32,12 +32,12 @@ a{
 }
 
 .i-header{
-    height: 100px;
+    height: 125px;
     background-color: rgba(27,114,232,255);
 }
 
 .i-body{
-    height: calc(100% - 100px);
+    height: calc(100% - 125px);
 }
 
 .i-list{
@@ -70,6 +70,10 @@ a{
     width: calc(100% - 150px);
 }
 
+.pillola-mobile{
+    display: none;
+}
+
 @media only screen and (max-width: 768px) {
     .logo{
         display: none;
@@ -90,12 +94,20 @@ a{
     .sidebar{
         width: 75px;
     }
-    
+
     .main-interface{
         width: calc(100% - 75px);
     }
 
     .i-list-menu-text{
+        display: none;
+    }
+
+    .pillola-mobile{
+        display: inline-block;
+    }
+
+    .pillola-off{
         display: none;
     }
 
